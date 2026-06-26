@@ -442,7 +442,7 @@ function Education() {
             <h3 className="mt-3 font-display font-bold">Languages</h3>
             <ul className="mt-3 space-y-1.5 text-sm text-muted-foreground">
               <li>· English</li>
-              <li>· Telugu</li>
+              <li>· Tamil</li>
             </ul>
           </div>
           <div className="glass rounded-2xl p-6">
@@ -474,9 +474,9 @@ function Contact() {
                 I'm open to internships, full-time roles and exciting freelance projects. Drop a line and let's create something futuristic.
               </p>
               <div className="mt-8 space-y-4 text-sm">
-                <a href="mailto:nikhita3017@gmail.com" className="flex items-center gap-3 transition hover:text-[color:var(--cyan)]">
+                <a href="mailto:nikees1789@gmail.com" className="flex items-center gap-3 transition hover:text-[color:var(--cyan)]">
                   <span className="grid h-10 w-10 place-items-center rounded-lg border border-[color:var(--border)] bg-black/30"><Mail className="h-4 w-4" /></span>
-                  nikhita3017@gmail.com
+                  nikees1789@gmail.com
                 </a>
                 <a href="tel:+917997661789" className="flex items-center gap-3 transition hover:text-[color:var(--cyan)]">
                   <span className="grid h-10 w-10 place-items-center rounded-lg border border-[color:var(--border)] bg-black/30"><Phone className="h-4 w-4" /></span>
@@ -524,7 +524,7 @@ function Footer() {
         <div className="flex gap-4">
           <a href="https://github.com" target="_blank" rel="noreferrer" className="transition hover:text-foreground"><Github className="h-4 w-4" /></a>
           <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="transition hover:text-foreground"><Linkedin className="h-4 w-4" /></a>
-          <a href="mailto:nikhita3017@gmail.com" className="transition hover:text-foreground"><Mail className="h-4 w-4" /></a>
+          <a href="mailto:nikees1789@gmail.com" className="transition hover:text-foreground"><Mail className="h-4 w-4" /></a>
         </div>
       </div>
     </footer>
