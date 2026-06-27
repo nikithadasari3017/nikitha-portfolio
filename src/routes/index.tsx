@@ -298,18 +298,25 @@ function Skills() {
 
 const PROJECTS = [
   {
-    title: "Fake News Detection System",
-    tag: "Machine Learning",
-    desc: "Built an ML model to classify news as real or fake using Python. Applied text preprocessing, NLP techniques and trained models on curated news datasets for reliable classification.",
-    stack: ["Python", "ML", "NLP", "LightGBM", "SHAP"],
-    icon: Brain,
+    title: "500 South India College Database Review",
+    tag: "Data Analytics · Visualization",
+    desc: "Conducted a comprehensive analysis of 500 South Indian colleges by collecting and organizing data such as rankings, locations, courses, fees, placements, infrastructure, and reviews. Cleaned and structured the dataset in Excel, performed EDA with Python (Pandas, Matplotlib), and built interactive dashboards in Power BI for decision-making.",
+    highlights: [
+      "Analyzed 500+ college datasets across South India",
+      "Cleaned and processed data using Excel and Python (Pandas)",
+      "Built visualizations and trend analysis in Jupyter Notebook",
+      "Developed interactive dashboards in Power BI",
+      "Identified patterns in rankings, fees, placements, and courses",
+    ],
+    stack: ["Excel", "Python", "Pandas", "Power BI", "Jupyter"],
+    icon: BarChart3,
   },
   {
-    title: "Cloud Data Analytics Dashboard",
-    tag: "Cloud · Data · Upcoming",
-    desc: "An interactive analytics dashboard pulling data from cloud services to visualize KPIs in real time with rich charts and filters for decision makers.",
-    stack: ["Python", "Machine Learning", "LightGBM", "SHAP", "Dashboard"],
-    icon: Cloud,
+    title: "Software Requirements Specification (SRS)",
+    tag: "Documentation · Analysis",
+    desc: "Authored a detailed Software Requirements Specification document for a real-world system, covering functional and non-functional requirements, use-case diagrams, system architecture, and stakeholder analysis to ensure clear project scope and deliverables.",
+    stack: ["Requirement Analysis", "UML", "Documentation", "System Design"],
+    icon: FileSpreadsheet,
   },
   {
     title: "E-Commerce Web App",
