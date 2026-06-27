@@ -244,23 +244,20 @@ function SectionHeader({ kicker, title }: { kicker: string; title: string }) {
 }
 
 const SKILLS = [
-  { cat: "Frontend", icon: Layers, color: "var(--cyan)", items: [
-    { n: "HTML5 / CSS3", v: 90 }, { n: "JavaScript", v: 80 },
-    { n: "React", v: 75 }, { n: "Tailwind CSS", v: 85 }, { n: "Bootstrap", v: 80 },
+  { cat: "Data & Analytics", icon: BarChart3, color: "var(--cyan)", items: [
+    { n: "SQL", v: 85 }, { n: "Microsoft Power BI", v: 80 },
+    { n: "Microsoft Excel", v: 85 }, { n: "Python (Pandas)", v: 75 },
   ]},
-  { cat: "Backend", icon: Server, color: "var(--neon)", items: [
-    { n: "Java", v: 85 }, { n: "Spring Boot", v: 70 },
-    { n: "Node.js", v: 70 }, { n: "Express.js", v: 65 },
+  { cat: "Cloud & Database", icon: Cloud, color: "var(--neon)", items: [
+    { n: "AWS EC2", v: 70 }, { n: "MySQL", v: 80 },
+    { n: "Data Cleaning", v: 80 }, { n: "Data Visualization", v: 85 },
   ]},
-  { cat: "Database", icon: Database, color: "var(--cyan)", items: [
-    { n: "MySQL", v: 80 }, { n: "MongoDB", v: 70 },
+  { cat: "Tools", icon: Wrench, color: "var(--cyan)", items: [
+    { n: "Git / GitHub", v: 80 }, { n: "VS Code", v: 90 },
+    { n: "Jupyter Notebook", v: 75 },
   ]},
-  { cat: "Tools", icon: Wrench, color: "var(--neon)", items: [
-    { n: "Git / GitHub", v: 85 }, { n: "REST APIs", v: 80 },
-    { n: "VS Code", v: 95 },
-  ]},
-  { cat: "Other", icon: Brain, color: "var(--cyan)", items: [
-    { n: "OOP", v: 80 }, { n: "Problem Solving", v: 85 }, { n: "Responsive Design", v: 90 },
+  { cat: "Other", icon: Brain, color: "var(--neon)", items: [
+    { n: "OOP", v: 75 }, { n: "Problem Solving", v: 85 }, { n: "Responsive Design", v: 80 },
   ]},
 ];
 
