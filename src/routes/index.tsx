@@ -211,7 +211,7 @@ function About() {
               My goal is to grow into a skilled professional who can contribute to innovative cloud and analytics-driven technologies.
             </p>
             <div className="mt-6 flex flex-wrap gap-2 font-mono text-xs">
-              {["Python", "Java", "React", "Spring Boot", "AWS", "ML"].map(t => (
+              {["Python", "SQL", "Power BI", "Excel", "AWS EC2", "MySQL"].map(t => (
                 <span key={t} className="rounded-md border border-[color:var(--border)] bg-white/5 px-3 py-1 text-[color:var(--cyan)]">{t}</span>
               ))}
             </div>
