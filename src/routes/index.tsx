@@ -166,10 +166,10 @@ function Hero() {
 {`> const analyst = {
   name: "Dasari Nikitha",
   role: "Cloud & Data Analyst",
-  stack: ["Python", "ML",
-    "React", "Spring Boot"],
-  cloud: "AWS · Azure",
-  focus: "Data · Cloud · ML",
+  stack: ["Python", "SQL",
+    "Power BI", "Excel"],
+  cloud: "AWS EC2 · Azure",
+  focus: "Data · Cloud · BI",
   status: "learning ✨"
 };`}
               </pre>
