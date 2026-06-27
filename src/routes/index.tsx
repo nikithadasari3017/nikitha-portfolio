@@ -205,7 +205,7 @@ function About() {
               {" "}<span className="text-[color:var(--cyan)]">Computer Science undergraduate</span> with a strong interest in Cloud Computing and Data Analytics. I enjoy working with data, uncovering valuable insights, and building efficient solutions that solve real-world problems.
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              Through my academic projects and continuous learning, I have developed skills in <span className="text-[color:var(--neon)]">Python, Machine Learning, NLP, and Web Development</span>, which have strengthened my technical and analytical abilities. I am always eager to explore emerging technologies, improve my problem-solving skills, and build scalable, data-driven solutions.
+              Through my academic projects and continuous learning, I have developed skills in <span className="text-[color:var(--neon)]">Python, SQL, Power BI, Excel, and Data Analytics</span>, which have strengthened my technical and analytical abilities. I am always eager to explore emerging technologies, improve my problem-solving skills, and build scalable, data-driven solutions.
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
               My goal is to grow into a skilled professional who can contribute to innovative cloud and analytics-driven technologies.
