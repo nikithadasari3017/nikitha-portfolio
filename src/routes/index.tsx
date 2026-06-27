@@ -244,17 +244,15 @@ function SectionHeader({ kicker, title }: { kicker: string; title: string }) {
 }
 
 const SKILLS = [
-  { cat: "Data & Analytics", icon: BarChart3, color: "var(--cyan)", items: [
+  { cat: "Technical Skills", icon: BarChart3, color: "var(--cyan)", items: [
     { n: "SQL", v: 85 }, { n: "Microsoft Power BI", v: 80 },
-    { n: "Microsoft Excel", v: 85 }, { n: "Python (Pandas)", v: 75 },
+    { n: "Microsoft Excel", v: 85 }, { n: "AWS EC2", v: 70 },
   ]},
-  { cat: "Cloud & Database", icon: Cloud, color: "var(--neon)", items: [
-    { n: "AWS EC2", v: 70 }, { n: "MySQL", v: 80 },
-    { n: "Data Cleaning", v: 80 }, { n: "Data Visualization", v: 85 },
+  { cat: "Database", icon: Database, color: "var(--neon)", items: [
+    { n: "MySQL", v: 80 },
   ]},
   { cat: "Tools", icon: Wrench, color: "var(--cyan)", items: [
-    { n: "Git / GitHub", v: 80 }, { n: "VS Code", v: 90 },
-    { n: "Jupyter Notebook", v: 75 },
+    { n: "Git", v: 80 }, { n: "GitHub", v: 80 }, { n: "VS Code", v: 90 },
   ]},
   { cat: "Other", icon: Brain, color: "var(--neon)", items: [
     { n: "OOP", v: 75 }, { n: "Problem Solving", v: 85 }, { n: "Responsive Design", v: 80 },
