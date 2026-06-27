@@ -9,10 +9,10 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Dasari Nikitha — Full Stack Developer & Cloud Enthusiast" },
-      { name: "description", content: "Portfolio of Dasari Nikitha — Full Stack Developer, Cloud & Data Analyst building futuristic, scalable web experiences." },
-      { property: "og:title", content: "Dasari Nikitha — Full Stack Developer" },
-      { property: "og:description", content: "Cyberpunk-inspired portfolio showcasing projects, skills and experience." },
+      { title: "Dasari Nikitha — Cloud Computing & Data Analyst" },
+      { name: "description", content: "Portfolio of Dasari Nikitha — a passionate fresher in Cloud Computing and Data Analytics, skilled in Python, Machine Learning, and modern web technologies." },
+      { property: "og:title", content: "Dasari Nikitha — Cloud Computing & Data Analyst" },
+      { property: "og:description", content: "Cyberpunk-inspired portfolio showcasing cloud, data, and analytics projects." },
     ],
     links: [
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -23,7 +23,13 @@ export const Route = createFileRoute("/")({
   component: Portfolio,
 });
 
-const ROLES = ["Full Stack Developer", "Java Developer", "Problem Solver", "AI Enthusiast", "Cloud & Data Analyst"];
+const ROLES = [
+  "Cloud Computing Enthusiast",
+  "Data Analyst",
+  "Python Developer",
+  "ML Learner",
+  "Problem Solver",
+];
 
 function TypingText() {
   const [idx, setIdx] = useState(0);
@@ -109,20 +115,20 @@ function Hero() {
         <div>
           <div className="inline-flex items-center gap-2 glass rounded-full px-3 py-1 text-xs font-mono text-[color:var(--cyan)]">
             <span className="h-2 w-2 rounded-full bg-[color:var(--cyan)] animate-glow" />
-            AVAILABLE FOR OPPORTUNITIES · 2026 GRADUATE
+            AVAILABLE FOR OPPORTUNITIES · 2027 GRADUATE
           </div>
           <h1 className="mt-6 font-display text-5xl sm:text-6xl md:text-7xl font-black leading-[1.05]">
             <span className="text-gradient">DASARI</span><br />
             <span className="text-foreground">NIKITHA</span>
           </h1>
           <p className="mt-4 font-mono text-xs sm:text-sm tracking-[0.3em] text-[color:var(--neon)]">
-            CLOUD COMPUTING INTERN · FULL STACK DEVELOPER
+            CLOUD COMPUTING AND DATA ANALYST
           </p>
           <p className="mt-6 text-lg sm:text-xl text-muted-foreground">
-            Building the future with code.
+            Exploring the future of cloud computing and data-driven decision-making.
           </p>
           <div className="mt-3 text-lg sm:text-xl">
-            <span className="text-muted-foreground">I'm a </span>
+            <span className="text-muted-foreground">Cloud & Data: Creating smarter digital futures. </span>
             <TypingText />
           </div>
           <div className="mt-8 flex flex-wrap gap-3">
@@ -138,7 +144,7 @@ function Hero() {
           </div>
           <div className="mt-10 flex gap-8 text-xs font-mono text-muted-foreground">
             <div><div className="text-2xl font-bold text-foreground">7.6</div>CGPA</div>
-            <div><div className="text-2xl font-bold text-foreground">2+</div>PROJECTS</div>
+            <div><div className="text-2xl font-bold text-foreground">3+</div>PROJECTS</div>
             <div><div className="text-2xl font-bold text-foreground">10+</div>TECHNOLOGIES</div>
           </div>
         </div>
@@ -156,19 +162,19 @@ function Hero() {
                 </div>
               </div>
               <pre className="mt-4 font-mono text-[11px] sm:text-xs leading-relaxed text-muted-foreground">
-{`> const dev = {
+{`> const analyst = {
   name: "Dasari Nikitha",
-  role: "Full Stack Dev",
-  stack: ["Java", "React",
-    "Spring", "Node"],
+  role: "Cloud & Data Analyst",
+  stack: ["Python", "ML",
+    "React", "Spring Boot"],
   cloud: "AWS · Azure",
-  passion: "AI · ML · Data",
-  status: "shipping ✨"
+  focus: "Data · Cloud · ML",
+  status: "learning ✨"
 };`}
               </pre>
               <div className="mt-4 flex items-center gap-2 rounded-lg border border-[color:var(--border)] bg-black/30 px-3 py-2 font-mono text-[11px]">
                 <span className="text-[color:var(--cyan)]">$</span>
-                <span className="text-foreground">npm run future</span>
+                <span className="text-foreground">npm run insights</span>
                 <span className="animate-blink text-[color:var(--neon)]">▌</span>
               </div>
             </div>
@@ -185,7 +191,7 @@ function About() {
     { label: "B.Tech CSE", icon: GraduationCap },
     { label: "Graduating 2027", icon: Award },
     { label: "Fast Learner", icon: Zap },
-    { label: "Team Player", icon: Cpu },
+    { label: "Sports Coordinator", icon: Cpu },
   ];
   return (
     <section id="about" className="relative px-4 py-24">
@@ -195,12 +201,13 @@ function About() {
           <div className="glass rounded-2xl p-8">
             <p className="text-lg leading-relaxed text-muted-foreground">
               Hi, I'm <span className="text-foreground font-semibold">Dasari Nikitha</span> — a passionate
-              {" "}<span className="text-[color:var(--cyan)]">Full Stack Developer</span> and Cloud & Data Analyst focused on building modern, scalable, and user-friendly web applications.
-              I enjoy turning ideas into real digital solutions through clean code and creative design.
+              {" "}<span className="text-[color:var(--cyan)]">Computer Science undergraduate</span> with a strong interest in Cloud Computing and Data Analytics. I enjoy working with data, uncovering valuable insights, and building efficient solutions that solve real-world problems.
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              Currently, I'm continuously learning and improving my skills across both frontend and backend technologies,
-              with a strong interest in <span className="text-[color:var(--neon)]">cloud computing, data analytics</span> and AI — working toward becoming an industry-ready developer.
+              Through my academic projects and continuous learning, I have developed skills in <span className="text-[color:var(--neon)]">Python, Machine Learning, NLP, and Web Development</span>, which have strengthened my technical and analytical abilities. I am always eager to explore emerging technologies, improve my problem-solving skills, and build scalable, data-driven solutions.
+            </p>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
+              My goal is to grow into a skilled professional who can contribute to innovative cloud and analytics-driven technologies.
             </p>
             <div className="mt-6 flex flex-wrap gap-2 font-mono text-xs">
               {["Python", "Java", "React", "Spring Boot", "AWS", "ML"].map(t => (
@@ -247,12 +254,12 @@ const SKILLS = [
   { cat: "Database", icon: Database, color: "var(--cyan)", items: [
     { n: "MySQL", v: 80 }, { n: "MongoDB", v: 70 },
   ]},
-  { cat: "Tools & Cloud", icon: Wrench, color: "var(--neon)", items: [
+  { cat: "Tools", icon: Wrench, color: "var(--neon)", items: [
     { n: "Git / GitHub", v: 85 }, { n: "REST APIs", v: 80 },
-    { n: "VS Code", v: 95 }, { n: "AWS / Cloud", v: 70 },
+    { n: "VS Code", v: 95 },
   ]},
   { cat: "Other", icon: Brain, color: "var(--cyan)", items: [
-    { n: "OOP & DSA", v: 80 }, { n: "Problem Solving", v: 85 }, { n: "Responsive Design", v: 90 },
+    { n: "OOP", v: 80 }, { n: "Problem Solving", v: 85 }, { n: "Responsive Design", v: 90 },
   ]},
 ];
 
@@ -300,11 +307,11 @@ const PROJECTS = [
     icon: Brain,
   },
   {
-    title: "Personal Portfolio Website",
-    tag: "Web Development",
-    desc: "Designed and developed a responsive personal portfolio using HTML & CSS to showcase skills, projects and contact info — with a clean, recruiter-friendly layout.",
-    stack: ["HTML5", "CSS3", "Responsive"],
-    icon: Code2,
+    title: "Cloud Data Analytics Dashboard",
+    tag: "Cloud · Data · Upcoming",
+    desc: "An interactive analytics dashboard pulling data from cloud services to visualize KPIs in real time with rich charts and filters for decision makers.",
+    stack: ["Python", "Machine Learning", "LightGBM", "SHAP", "Dashboard"],
+    icon: Cloud,
   },
   {
     title: "E-Commerce Web App",
@@ -312,13 +319,6 @@ const PROJECTS = [
     desc: "A full stack e-commerce platform with product catalog, cart, secure auth and order workflow — built using React on the frontend and Spring Boot REST APIs on the backend.",
     stack: ["React", "Spring Boot", "MySQL", "JWT"],
     icon: Layers,
-  },
-  {
-    title: "Cloud Analytics Dashboard",
-    tag: "Cloud · Data · Upcoming",
-    desc: "An interactive analytics dashboard pulling data from cloud services to visualize KPIs in real time with rich charts and filters for decision makers.",
-    stack: ["Node.js", "AWS", "MongoDB", "Charts"],
-    icon: Cloud,
   },
 ];
 
@@ -364,14 +364,9 @@ function Projects() {
 function Experience() {
   const items = [
     {
-      role: "Cloud Computing Intern",
+      role: "Cloud Computing & Data Analytics Learner",
       org: "Self-Driven · 2025",
-      desc: "Exploring AWS and Azure fundamentals, deploying full stack applications and building serverless workflows.",
-    },
-    {
-      role: "Personal Portfolio Website",
-      org: "Project · 2024",
-      desc: "Developed a responsive site with About, Skills, Projects and Contact sections for a recruiter-friendly experience.",
+      desc: "Exploring AWS and Azure fundamentals, data visualization, and building ML models to extract insights from complex datasets.",
     },
     {
       role: "Fake News Detection System",
