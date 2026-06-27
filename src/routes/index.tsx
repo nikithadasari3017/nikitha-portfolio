@@ -391,12 +391,22 @@ function Experience() {
     {
       role: "Cloud Computing & Data Analytics Learner",
       org: "Self-Driven · 2025",
-      desc: "Exploring AWS EC2, cloud fundamentals, data visualization with Power BI, and building analytics workflows to extract insights from complex datasets.",
+      desc: "Exploring AWS EC2, cloud fundamentals, data visualization with Power BI and Excel, and building analytics workflows to extract insights from complex datasets.",
     },
     {
       role: "500 South India College Database Review",
       org: "Data Analytics Project · 2024",
       desc: "Analyzed 500+ college datasets, built EDA pipelines in Python, and created interactive Power BI dashboards for stakeholder decision-making.",
+    },
+    {
+      role: "AWS One-Click Deployment Platform — SRS",
+      org: "Cloud Computing Project · 2025",
+      desc: "Designed a web-based system to automate AWS EC2 instance creation and application deployment using predefined templates, eliminating manual configuration.",
+    },
+    {
+      role: "UI/UX Web Page Designer",
+      org: "Frontend Design · 2025",
+      desc: "Designed attractive, user-friendly web interfaces with responsive layouts that improved audience reach and engagement across devices.",
     },
   ];
   return (
