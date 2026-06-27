@@ -381,12 +381,12 @@ function Experience() {
     {
       role: "Cloud Computing & Data Analytics Learner",
       org: "Self-Driven · 2025",
-      desc: "Exploring AWS and Azure fundamentals, data visualization, and building ML models to extract insights from complex datasets.",
+      desc: "Exploring AWS EC2, cloud fundamentals, data visualization with Power BI, and building analytics workflows to extract insights from complex datasets.",
     },
     {
-      role: "Fake News Detection System",
-      org: "ML Project · 2024",
-      desc: "Built and evaluated NLP models to classify news authenticity, including preprocessing pipelines and dataset curation.",
+      role: "500 South India College Database Review",
+      org: "Data Analytics Project · 2024",
+      desc: "Analyzed 500+ college datasets, built EDA pipelines in Python, and created interactive Power BI dashboards for stakeholder decision-making.",
     },
   ];
   return (
