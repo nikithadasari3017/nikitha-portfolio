@@ -28,7 +28,7 @@ const ROLES = [
   "Cloud Computing Enthusiast",
   "Data Analyst",
   "Python Developer",
-  "ML Learner",
+  "SQL & BI Developer",
   "Problem Solver",
 ];
 
