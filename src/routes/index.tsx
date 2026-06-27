@@ -4,7 +4,7 @@ import {
   Code2, Database, Wrench, Sparkles, Github, Mail, Phone, MapPin,
   Linkedin, Download, ArrowRight, ExternalLink, Cpu, Cloud, Brain,
   Layers, Server, GitBranch, Zap, Award, GraduationCap, Languages,
-  BarChart3, FileSpreadsheet, Table,
+  BarChart3, FileSpreadsheet, Table, Monitor,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
