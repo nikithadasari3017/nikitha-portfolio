@@ -4,6 +4,7 @@ import {
   Code2, Database, Wrench, Sparkles, Github, Mail, Phone, MapPin,
   Linkedin, Download, ArrowRight, ExternalLink, Cpu, Cloud, Brain,
   Layers, Server, GitBranch, Zap, Award, GraduationCap, Languages,
+  BarChart3, FileSpreadsheet, Table,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
@@ -27,7 +28,7 @@ const ROLES = [
   "Cloud Computing Enthusiast",
   "Data Analyst",
   "Python Developer",
-  "ML Learner",
+  "SQL & BI Developer",
   "Problem Solver",
 ];
 
@@ -165,10 +166,10 @@ function Hero() {
 {`> const analyst = {
   name: "Dasari Nikitha",
   role: "Cloud & Data Analyst",
-  stack: ["Python", "ML",
-    "React", "Spring Boot"],
-  cloud: "AWS · Azure",
-  focus: "Data · Cloud · ML",
+  stack: ["Python", "SQL",
+    "Power BI", "Excel"],
+  cloud: "AWS EC2 · Azure",
+  focus: "Data · Cloud · BI",
   status: "learning ✨"
 };`}
               </pre>
@@ -204,13 +205,13 @@ function About() {
               {" "}<span className="text-[color:var(--cyan)]">Computer Science undergraduate</span> with a strong interest in Cloud Computing and Data Analytics. I enjoy working with data, uncovering valuable insights, and building efficient solutions that solve real-world problems.
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              Through my academic projects and continuous learning, I have developed skills in <span className="text-[color:var(--neon)]">Python, Machine Learning, NLP, and Web Development</span>, which have strengthened my technical and analytical abilities. I am always eager to explore emerging technologies, improve my problem-solving skills, and build scalable, data-driven solutions.
+              Through my academic projects and continuous learning, I have developed skills in <span className="text-[color:var(--neon)]">Python, SQL, Power BI, Excel, and Data Analytics</span>, which have strengthened my technical and analytical abilities. I am always eager to explore emerging technologies, improve my problem-solving skills, and build scalable, data-driven solutions.
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
               My goal is to grow into a skilled professional who can contribute to innovative cloud and analytics-driven technologies.
             </p>
             <div className="mt-6 flex flex-wrap gap-2 font-mono text-xs">
-              {["Python", "Java", "React", "Spring Boot", "AWS", "ML"].map(t => (
+              {["Python", "SQL", "Power BI", "Excel", "AWS EC2", "MySQL"].map(t => (
                 <span key={t} className="rounded-md border border-[color:var(--border)] bg-white/5 px-3 py-1 text-[color:var(--cyan)]">{t}</span>
               ))}
             </div>
@@ -243,23 +244,20 @@ function SectionHeader({ kicker, title }: { kicker: string; title: string }) {
 }
 
 const SKILLS = [
-  { cat: "Frontend", icon: Layers, color: "var(--cyan)", items: [
-    { n: "HTML5 / CSS3", v: 90 }, { n: "JavaScript", v: 80 },
-    { n: "React", v: 75 }, { n: "Tailwind CSS", v: 85 }, { n: "Bootstrap", v: 80 },
+  { cat: "Data & Analytics", icon: BarChart3, color: "var(--cyan)", items: [
+    { n: "SQL", v: 85 }, { n: "Microsoft Power BI", v: 80 },
+    { n: "Microsoft Excel", v: 85 }, { n: "Python (Pandas)", v: 75 },
   ]},
-  { cat: "Backend", icon: Server, color: "var(--neon)", items: [
-    { n: "Java", v: 85 }, { n: "Spring Boot", v: 70 },
-    { n: "Node.js", v: 70 }, { n: "Express.js", v: 65 },
+  { cat: "Cloud & Database", icon: Cloud, color: "var(--neon)", items: [
+    { n: "AWS EC2", v: 70 }, { n: "MySQL", v: 80 },
+    { n: "Data Cleaning", v: 80 }, { n: "Data Visualization", v: 85 },
   ]},
-  { cat: "Database", icon: Database, color: "var(--cyan)", items: [
-    { n: "MySQL", v: 80 }, { n: "MongoDB", v: 70 },
+  { cat: "Tools", icon: Wrench, color: "var(--cyan)", items: [
+    { n: "Git / GitHub", v: 80 }, { n: "VS Code", v: 90 },
+    { n: "Jupyter Notebook", v: 75 },
   ]},
-  { cat: "Tools", icon: Wrench, color: "var(--neon)", items: [
-    { n: "Git / GitHub", v: 85 }, { n: "REST APIs", v: 80 },
-    { n: "VS Code", v: 95 },
-  ]},
-  { cat: "Other", icon: Brain, color: "var(--cyan)", items: [
-    { n: "OOP", v: 80 }, { n: "Problem Solving", v: 85 }, { n: "Responsive Design", v: 90 },
+  { cat: "Other", icon: Brain, color: "var(--neon)", items: [
+    { n: "OOP", v: 75 }, { n: "Problem Solving", v: 85 }, { n: "Responsive Design", v: 80 },
   ]},
 ];
 
@@ -300,18 +298,25 @@ function Skills() {
 
 const PROJECTS = [
   {
-    title: "Fake News Detection System",
-    tag: "Machine Learning",
-    desc: "Built an ML model to classify news as real or fake using Python. Applied text preprocessing, NLP techniques and trained models on curated news datasets for reliable classification.",
-    stack: ["Python", "ML", "NLP", "LightGBM", "SHAP"],
-    icon: Brain,
+    title: "500 South India College Database Review",
+    tag: "Data Analytics · Visualization",
+    desc: "Conducted a comprehensive analysis of 500 South Indian colleges by collecting and organizing data such as rankings, locations, courses, fees, placements, infrastructure, and reviews. Cleaned and structured the dataset in Excel, performed EDA with Python (Pandas, Matplotlib), and built interactive dashboards in Power BI for decision-making.",
+    highlights: [
+      "Analyzed 500+ college datasets across South India",
+      "Cleaned and processed data using Excel and Python (Pandas)",
+      "Built visualizations and trend analysis in Jupyter Notebook",
+      "Developed interactive dashboards in Power BI",
+      "Identified patterns in rankings, fees, placements, and courses",
+    ],
+    stack: ["Excel", "Python", "Pandas", "Power BI", "Jupyter"],
+    icon: BarChart3,
   },
   {
-    title: "Cloud Data Analytics Dashboard",
-    tag: "Cloud · Data · Upcoming",
-    desc: "An interactive analytics dashboard pulling data from cloud services to visualize KPIs in real time with rich charts and filters for decision makers.",
-    stack: ["Python", "Machine Learning", "LightGBM", "SHAP", "Dashboard"],
-    icon: Cloud,
+    title: "Software Requirements Specification (SRS)",
+    tag: "Documentation · Analysis",
+    desc: "Authored a detailed Software Requirements Specification document for a real-world system, covering functional and non-functional requirements, use-case diagrams, system architecture, and stakeholder analysis to ensure clear project scope and deliverables.",
+    stack: ["Requirement Analysis", "UML", "Documentation", "System Design"],
+    icon: FileSpreadsheet,
   },
   {
     title: "E-Commerce Web App",
@@ -329,7 +334,7 @@ function Projects() {
         <SectionHeader kicker="03 / WORK" title="Featured Projects" />
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {PROJECTS.map((p, i) => (
-            <article key={p.title} className="glass group relative overflow-hidden rounded-2xl p-7 transition hover:-translate-y-2 hover:border-[color:var(--neon)]" style={{ transformStyle: "preserve-3d" }}>
+            <article key={p.title} className={`glass group relative overflow-hidden rounded-2xl p-7 transition hover:-translate-y-2 hover:border-[color:var(--neon)] ${i === 0 ? "md:col-span-2" : ""}`} style={{ transformStyle: "preserve-3d" }}>
               <div className="absolute -right-16 -top-16 h-48 w-48 rounded-full bg-[image:var(--gradient-primary)] opacity-10 blur-3xl transition group-hover:opacity-30" />
               <div className="flex items-center justify-between">
                 <div className="grid h-12 w-12 place-items-center rounded-xl border border-[color:var(--border)] bg-black/30 text-[color:var(--cyan)]">
@@ -340,6 +345,16 @@ function Projects() {
               <div className="mt-5 font-mono text-[10px] tracking-widest text-muted-foreground">{p.tag.toUpperCase()}</div>
               <h3 className="mt-1 font-display text-xl font-bold">{p.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
+              {"highlights" in p && p.highlights && (
+                <ul className="mt-4 space-y-1.5">
+                  {p.highlights.map((h) => (
+                    <li key={h} className="flex items-start gap-2 text-xs text-muted-foreground">
+                      <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[color:var(--neon)]" />
+                      {h}
+                    </li>
+                  ))}
+                </ul>
+              )}
               <div className="mt-5 flex flex-wrap gap-2">
                 {p.stack.map(s => (
                   <span key={s} className="rounded-md border border-[color:var(--border)] bg-white/5 px-2.5 py-1 font-mono text-[10px] text-[color:var(--cyan)]">{s}</span>
@@ -366,12 +381,12 @@ function Experience() {
     {
       role: "Cloud Computing & Data Analytics Learner",
       org: "Self-Driven · 2025",
-      desc: "Exploring AWS and Azure fundamentals, data visualization, and building ML models to extract insights from complex datasets.",
+      desc: "Exploring AWS EC2, cloud fundamentals, data visualization with Power BI, and building analytics workflows to extract insights from complex datasets.",
     },
     {
-      role: "Fake News Detection System",
-      org: "ML Project · 2024",
-      desc: "Built and evaluated NLP models to classify news authenticity, including preprocessing pipelines and dataset curation.",
+      role: "500 South India College Database Review",
+      org: "Data Analytics Project · 2024",
+      desc: "Analyzed 500+ college datasets, built EDA pipelines in Python, and created interactive Power BI dashboards for stakeholder decision-making.",
     },
   ];
   return (
