@@ -334,7 +334,7 @@ function Projects() {
         <SectionHeader kicker="03 / WORK" title="Featured Projects" />
         <div className="mt-12 grid gap-6 md:grid-cols-2">
           {PROJECTS.map((p, i) => (
-            <article key={p.title} className="glass group relative overflow-hidden rounded-2xl p-7 transition hover:-translate-y-2 hover:border-[color:var(--neon)]" style={{ transformStyle: "preserve-3d" }}>
+            <article key={p.title} className={`glass group relative overflow-hidden rounded-2xl p-7 transition hover:-translate-y-2 hover:border-[color:var(--neon)] ${i === 0 ? "md:col-span-2" : ""}`} style={{ transformStyle: "preserve-3d" }}>
               <div className="absolute -right-16 -top-16 h-48 w-48 rounded-full bg-[image:var(--gradient-primary)] opacity-10 blur-3xl transition group-hover:opacity-30" />
               <div className="flex items-center justify-between">
                 <div className="grid h-12 w-12 place-items-center rounded-xl border border-[color:var(--border)] bg-black/30 text-[color:var(--cyan)]">
@@ -345,6 +345,16 @@ function Projects() {
               <div className="mt-5 font-mono text-[10px] tracking-widest text-muted-foreground">{p.tag.toUpperCase()}</div>
               <h3 className="mt-1 font-display text-xl font-bold">{p.title}</h3>
               <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.desc}</p>
+              {"highlights" in p && p.highlights && (
+                <ul className="mt-4 space-y-1.5">
+                  {p.highlights.map((h) => (
+                    <li key={h} className="flex items-start gap-2 text-xs text-muted-foreground">
+                      <span className="mt-1 h-1.5 w-1.5 shrink-0 rounded-full bg-[color:var(--neon)]" />
+                      {h}
+                    </li>
+                  ))}
+                </ul>
+              )}
               <div className="mt-5 flex flex-wrap gap-2">
                 {p.stack.map(s => (
                   <span key={s} className="rounded-md border border-[color:var(--border)] bg-white/5 px-2.5 py-1 font-mono text-[10px] text-[color:var(--cyan)]">{s}</span>
